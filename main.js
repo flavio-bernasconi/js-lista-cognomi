@@ -8,6 +8,8 @@ var cognomi = [
   'comin'
 ];
 
+
+
 //utente inserisce il suo cognome
 var elementoAggiunto = prompt("cosa manca ")
 cognomi.push(elementoAggiunto);
@@ -24,5 +26,5 @@ for (var i = 0; i < cognomi.length; i++) {
 
   contenuto = document.getElementById('lista').innerHTML;
 
-  document.getElementById('lista').innerHTML  = contenuto + "<li class='uno'>" + (i+1) + " " + cognomi[i] + "</li>";
+  document.getElementById('lista').innerHTML  = contenuto + "<li class='uno'>" + cognomi[i] + "</li>";
 }
