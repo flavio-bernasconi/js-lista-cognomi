@@ -1,4 +1,3 @@
-
 var cognomi = [
   'sassi',
   'rossi',
@@ -16,8 +15,10 @@ cognomi.push(elementoAggiunto);
 //mette i cognomi in ordine alfabetico
 cognomi.sort();
 //indico la posizione del cognome inserito all'interno della lista
-var posizione = parseInt(cognomi.indexOf(elementoAggiunto))+1;
-console.log('la posizione nella lista è: ' + posizione);
+var posizione = cognomi.indexOf(elementoAggiunto);
+console.log(posizione);
+var realPosizione = posizione + 1;
+console.log('la posizione nella lista è: ' + realPosizione);
 
 
 var contenuto;
